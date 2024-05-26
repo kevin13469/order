@@ -7,7 +7,7 @@ let theCats = []; //商品類別
 let theFoodAdditions = []; //食品附加選項
 let theProducts = []; //存放菜單的陣列(sort by productId)
 // const urlDomain = 'http://localhost:3000';
-const urlDomain = 'https://api.render.com/deploy/srv-cp9m9v5ds78s73ckf710?key=yuzCaHJvbOI';
+const urlDomain = 'https://online-server-9q5q.onrender.com';
 
 //#endregion
 $(function () {

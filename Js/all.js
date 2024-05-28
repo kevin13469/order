@@ -546,11 +546,6 @@ function renderCartModal() {
     <h5 class="fw-bolder">商品明細</h5>
     <hr class="my-2" />
     ${contentCartList.join("")}
-</div>
-<div name="訂單備註" class="mb-3">
-    <h5 class="fw-bolder">訂單備註</h5>
-    <hr class="my-2" />
-    <textarea class="form-control" id="cartComment" rows="2"></textarea>
 </div>`
 
     $("#cartModal .modal-body").html(content);

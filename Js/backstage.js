@@ -371,12 +371,6 @@ function renderNavList() {
     let content = `
     ${userNameContent}
     <li class="nav-item">
-        <span class="nav-link finger" onclick="goToCustomerOrdersPage()">出餐管理</span>
-    </li>
-    <li class="nav-item">
-        <span class="nav-link finger" onclick="goToProductManagePage()">菜單管理</span>
-    </li>
-    <li class="nav-item">
         <span class="nav-link finger" onclick="goToIndex()">切換至前台</span>
     </li>
     

@@ -639,10 +639,6 @@ function renderLoginModal(method = 'login') {
         <input type="email" class="login-input" placeholder="Email" id="loginEmail" />
         <input type="password" class="login-input" placeholder="Password" id="loginPassword" />
         <button class="btn btn-login" onclick="btnLogin()">登入</button>
-        <p class="fw-light">
-            <span>Demo: </span>
-            <span class="ms-2 finger" onclick="demoInput('阿姨')">店家</span>
-        </p>
     </div>
     `
     }

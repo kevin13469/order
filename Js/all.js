@@ -5,7 +5,7 @@ let theUserOrders = []; //客人的歷史訂單
 let theFoodAdditions = []; //食物附加選項
 const expireMins = 1440; //登入過期時間(分鐘)
 // const urlDomain = 'http://localhost:3000';
-const urlDomain = 'http://localhost:3000';
+const urlDomain = 'https://online-server-9q5q.onrender.com';
 //https://json-server-vercel-a.vercel.app
 //#endregion
 

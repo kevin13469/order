@@ -5,7 +5,7 @@ let theUserOrders = []; //客人的歷史訂單
 let theFoodAdditions = []; //食物附加選項
 const expireMins = 1440; //登入過期時間(分鐘)
 // const urlDomain = 'http://localhost:3000';
-const urlDomain = 'https://online-server-9q5q.onrender.com';
+const urlDomain = 'http://localhost:3000';
 //https://json-server-vercel-a.vercel.app
 //#endregion
 
@@ -475,7 +475,6 @@ function renderProductModal(productId) {
     <div class="modal-body pt-1">
         <!-- 介紹 -->
         <div>
-            <img src=" ${ img } " class="modalFoodImg mb-3" alt="" />
             <p class="h6 fw-light">${comment}</p>
             <p class="h6 fw-light"></p>
             <p class="h5">$${price}</p>
@@ -528,7 +527,6 @@ function renderCartModal() {
                 </div>
             </div>
             
-            <span class="h6 fw-light d-block">${comment ? (comment) : ""}</span>
             <span class="h6 fw-light d-block">${additems.map(x => additionIdToName(x)).join("/")}</span>
             <div class="d-flex justify-content-between">
                 
@@ -639,6 +637,10 @@ function renderLoginModal(method = 'login') {
         <input type="email" class="login-input" placeholder="Email" id="loginEmail" />
         <input type="password" class="login-input" placeholder="Password" id="loginPassword" />
         <button class="btn btn-login" onclick="btnLogin()">登入</button>
+        <p class="fw-light">
+            <span>Demo: </span>
+            <span class="ms-2 finger" onclick="demoInput('阿姨')">店家</span>
+        </p>
     </div>
     `
     }

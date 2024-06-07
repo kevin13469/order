@@ -475,6 +475,7 @@ function renderProductModal(productId) {
     <div class="modal-body pt-1">
         <!-- 介紹 -->
         <div>
+            <img src=" ${ img } " class="modalFoodImg mb-3" alt="" />
             <p class="h6 fw-light">${comment}</p>
             <p class="h6 fw-light"></p>
             <p class="h5">$${price}</p>

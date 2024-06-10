@@ -449,7 +449,7 @@ function renderMenu() {
     $('#menu').html(contents.join(''));
     filterMenu();
 }
-//渲染產品Modal
+//渲染產品Modal re
 function renderProductModal(productId) {
     const myProductObj = theProducts.find(productObj => productObj.id == productId);
     const { catId, id, name, comment, price, img, isSoldOut, additionIds } = myProductObj;
@@ -459,13 +459,13 @@ function renderProductModal(productId) {
         let str = `<div class="" data-addtion-id="${addObj.id}">
                         <label>${addObj.name}</label>
                         <hr class="my-1"/>
-                        ${addObj.items.map(item => {
-            return `<input type="${addObj.isMulti ? 'checkbox' : 'radio'}" class="btn-check foodAdditionOption" name="${addObj.name}" id="add-${item.id}" value="${item.id}" data-add-price="${item.price}">
+                        ${addObj.items.map((item, index) => {
+            return `<input type="${addObj.isMulti ? 'checkbox' : 'radio'}" class="btn-check foodAdditionOption" name="${addObj.name}" id="add-${item.id}" value="${item.id}" data-add-price="${item.price}" ${!addObj.isMulti && index === 0 ? 'checked' : ''}>
                                     <label class="btn btn-pill-primary" for="add-${item.id}" >${item.name} +$${item.price}</label>`;
         }).join('')}
                     </div>`;
         return str;
-    })
+    });
     let content = `<div class="modal-content">
     <div class="modal-header d-block pb-1" style="border-width: 0;">             
     <button type="button" class="btn-close float-end float" data-bs-dismiss="modal"></button>

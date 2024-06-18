@@ -409,7 +409,7 @@ function postCartOrder(order) {
     }).then(function (response) {
         console.log(response)
         gaPurchase(order);
-        sweetSuccess('訂單送出成功', '將盡快為您備餐', 2500);
+        sweetSuccess('訂單送出成功', '請至櫃檯結帳', 2500);
         switchModal();
         deleteDataFromLocalStorage('cart');
         updateFooterTotalPrice();

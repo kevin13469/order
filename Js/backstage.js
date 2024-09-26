@@ -328,7 +328,7 @@ function renderCustomerOrders(status = 'false') {
         let detailContents = details.map(x => {
             return `<div class="餐點內容">
                         <div><span>${x.name}</span></div>
-                        <div class="fw-light d-flex justify-content-end"><span>${x.comment}</span></div>
+                        <div class="fw-light d-flex justify-content-end"><span style="color:red;">${x.comment}</span></div>
                         <div class="fw-light d-flex justify-content-end"><span>${x.additems.map(addi => additionIdToName(addi)).join("/")}</span></div>
                         <div class="fw-light d-flex justify-content-end"><span>${x.qty}份</span></div>
                     </div>`
